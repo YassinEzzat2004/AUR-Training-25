@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'turtle_chase = turtle_pkg.turtle_chase:ros_main',
         ],
     },
 )
