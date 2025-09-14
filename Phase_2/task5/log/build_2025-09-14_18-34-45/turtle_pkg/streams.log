@@ -1,0 +1,39 @@
+[5.194s] Invoking command in '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/src/turtle_pkg': PYTHONPATH=/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_pkg build --build-base /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build install --record /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/install.log --install-scripts $base/lib/turtle_pkg --single-version-externally-managed install_data
+[6.174s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[6.176s] !!
+[6.176s] 
+[6.176s]         ********************************************************************************
+[6.178s]         Usage of dash-separated 'script-dir' will not be supported in future
+[6.178s]         versions. Please use the underscore name 'script_dir' instead.
+[6.179s] 
+[6.179s]         This deprecation is overdue, please update your project and remove deprecated
+[6.179s]         calls to avoid build errors in the future.
+[6.180s] 
+[6.180s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[6.180s]         ********************************************************************************
+[6.184s] 
+[6.185s] !!
+[6.185s]   opt = self.warn_dash_deprecation(opt, section)
+[7.076s] running egg_info
+[7.182s] writing ../../build/turtle_pkg/turtle_pkg.egg-info/PKG-INFO
+[7.187s] writing dependency_links to ../../build/turtle_pkg/turtle_pkg.egg-info/dependency_links.txt
+[7.189s] writing entry points to ../../build/turtle_pkg/turtle_pkg.egg-info/entry_points.txt
+[7.189s] writing requirements to ../../build/turtle_pkg/turtle_pkg.egg-info/requires.txt
+[7.190s] writing top-level names to ../../build/turtle_pkg/turtle_pkg.egg-info/top_level.txt
+[7.395s] reading manifest file '../../build/turtle_pkg/turtle_pkg.egg-info/SOURCES.txt'
+[7.411s] writing manifest file '../../build/turtle_pkg/turtle_pkg.egg-info/SOURCES.txt'
+[7.411s] running build
+[7.411s] running build_py
+[7.412s] copying turtle_pkg/turtle_chase.py -> /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build/lib/turtle_pkg
+[7.412s] running install
+[7.441s] running install_lib
+[7.517s] copying /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build/lib/turtle_pkg/turtle_chase.py -> /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg
+[7.519s] byte-compiling /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg/turtle_chase.py to turtle_chase.cpython-312.pyc
+[7.523s] running install_data
+[7.524s] running install_egg_info
+[7.579s] removing '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[7.583s] Copying ../../build/turtle_pkg/turtle_pkg.egg-info to /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg-0.0.0-py3.12.egg-info
+[7.586s] running install_scripts
+[8.113s] Installing turtle_chase script to /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/turtle_pkg
+[8.114s] writing list of installed files to '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/install.log'
+[8.226s] Invoked command in '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/src/turtle_pkg' returned '0': PYTHONPATH=/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_pkg build --build-base /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build install --record /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/install.log --install-scripts $base/lib/turtle_pkg --single-version-externally-managed install_data

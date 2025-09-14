@@ -8,8 +8,7 @@ import random
 from std_msgs.msg import Int32
 
 
-
-class DualTeleop(Node):
+class Turtle(Node):
     def __init__(self, stdscr):
         super().__init__('turtle_node')
         for i in range(1,4):
@@ -44,6 +43,9 @@ class DualTeleop(Node):
         self.pos_enemy2 = None
         self.pos_enemy3 = None
         self.create_timer(0.05, self.key_loop)
+
+        self.flags=[False,False,False]
+
     def main_pose_callback(self, msg): self.pos_main = msg
     def enemy1_pose_callback(self, msg): self.pos_enemy1 = msg
     def enemy2_pose_callback(self, msg): self.pos_enemy2 = msg
@@ -52,20 +54,23 @@ class DualTeleop(Node):
     def kill_respawn(self):
         positions=[self.pos_enemy1,self.pos_enemy2,self.pos_enemy3]
         for i,pos in enumerate(positions):
-            if abs(self.pos_main.x-pos.x)<=0.5 and abs(self.pos_main.y-pos.y)<=0.5:
+            if not (self.flags[i])and abs(self.pos_main.x-pos.x)<=0.5 and abs(self.pos_main.y-pos.y)<=0.5:
+                self.flags[i]=True
                 self.score+=1
                 msg = Int32()
                 msg.data = self.score
                 self.score_pub.publish(msg)
 
-                print(f"Score: {self.score}", flush=True)
+                self.get_logger().info(f"Score: {self.score}")
 
-                
+
                 x=random.uniform(0.0,11.0)
                 y=random.uniform(0.0,11.0)
 
                 os.system(f"ros2 service call /enemy{i+1}/teleport_absolute turtlesim/srv/TeleportAbsolute '{{x: {x}, y: {y}, theta: 0.0}}'")
-
+            elif (self.flags[i]) and abs(self.pos_main.x-pos.x)<=0.5 and abs(self.pos_main.y-pos.y)<=0.5:
+                self.flags[i]=True
+                
     def key_loop(self):
         key = self.stdscr.getch()
 
@@ -95,7 +100,7 @@ class DualTeleop(Node):
 
 def main(stdscr):
     rclpy.init()
-    node = DualTeleop(stdscr)
+    node = Turtle(stdscr)
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
