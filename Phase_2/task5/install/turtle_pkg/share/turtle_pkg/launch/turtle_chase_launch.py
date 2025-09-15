@@ -3,7 +3,6 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-        # Start turtlesim GUI
         Node(
             package='turtlesim',
             executable='turtlesim_node',
@@ -11,7 +10,6 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Start your custom game node
         Node(
             package='turtle_pkg',
             executable='turtle_chase',

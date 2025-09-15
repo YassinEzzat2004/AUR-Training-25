@@ -67,8 +67,13 @@ class Turtle(Node):
                 x=random.uniform(0.0,11.0)
                 y=random.uniform(0.0,11.0)
 
-                os.system(f"ros2 service call /enemy{i+1}/teleport_absolute turtlesim/srv/TeleportAbsolute '{{x: {x}, y: {y}, theta: 0.0}}'")
-            elif (self.flags[i]) and abs(self.pos_main.x-pos.x)<=0.5 and abs(self.pos_main.y-pos.y)<=0.5:
+                #ros2 service call /kill turtlesim/srv/Kill "{name: 'turtle1'}"
+                os.system(f"ros2 service call /kill turtlesim/srv/Kill '{{name: \"enemy{i+1}\"}}'")
+
+                os.system(f"ros2 service call /spawn turtlesim/srv/Spawn '{{x: {x}, y: {y}, theta: 0.0, name: \"enemy{i+1}\"}}'")
+            
+
+            elif (self.flags[i]) and abs(self.pos_main.x-pos.x)>0.5 and abs(self.pos_main.y-pos.y)>0.5:
                 self.flags[i]=False
                 
     def key_loop(self):
