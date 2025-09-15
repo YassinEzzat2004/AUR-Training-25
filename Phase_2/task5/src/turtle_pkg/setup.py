@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'turtle_chase = turtle_pkg.turtle_chase:ros_main',
+
         ],
     },
     
