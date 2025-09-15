@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.002624] (turtle_pkg) JobQueued: {'identifier': 'turtle_pkg', 'dependencies': OrderedDict()}
+[0.003096] (turtle_pkg) JobStarted: {'identifier': 'turtle_pkg'}
+[0.095264] (-) TimerEvent: {}
+[0.198215] (-) TimerEvent: {}
+[0.301708] (-) TimerEvent: {}
+[0.402201] (-) TimerEvent: {}
+[0.503305] (-) TimerEvent: {}
+[0.604303] (-) TimerEvent: {}
+[0.704998] (-) TimerEvent: {}
+[0.806343] (-) TimerEvent: {}
+[0.907578] (-) TimerEvent: {}
+[1.008547] (-) TimerEvent: {}
+[1.110195] (-) TimerEvent: {}
+[1.217662] (-) TimerEvent: {}
+[1.318427] (-) TimerEvent: {}
+[1.419831] (-) TimerEvent: {}
+[1.523149] (-) TimerEvent: {}
+[1.623699] (-) TimerEvent: {}
+[1.724500] (-) TimerEvent: {}
+[1.825401] (-) TimerEvent: {}
+[1.926258] (-) TimerEvent: {}
+[2.027061] (-) TimerEvent: {}
+[2.127601] (-) TimerEvent: {}
+[2.228511] (-) TimerEvent: {}
+[2.329190] (-) TimerEvent: {}
+[2.429862] (-) TimerEvent: {}
+[2.530856] (-) TimerEvent: {}
+[2.631888] (-) TimerEvent: {}
+[2.732857] (-) TimerEvent: {}
+[2.833284] (-) TimerEvent: {}
+[2.934114] (-) TimerEvent: {}
+[3.034982] (-) TimerEvent: {}
+[3.135901] (-) TimerEvent: {}
+[3.237222] (-) TimerEvent: {}
+[3.338120] (-) TimerEvent: {}
+[3.404379] (turtle_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_pkg', 'build', '--build-base', '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build', 'install', '--record', '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/install.log', '--install-scripts', '$base/lib/turtle_pkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/src/turtle_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yassin_ezzat', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yassin_ezzat', 'OLDPWD': '/home/yassin_ezzat/AUR-Training-25', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install:/home/yassin_ezzat/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yassin_ezzat', 'NAME': 'Desktop-HP', 'WSL_INTEROP': '/run/WSL/291_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/HP/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/HP/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HP/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg:/home/yassin_ezzat/ros2_ws/install/weather_py:/home/yassin_ezzat/ros2_ws/install/turtle_pkg:/home/yassin_ezzat/ros2_ws/install/pkg_py:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages:/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages:/home/yassin_ezzat/ros2_ws/install/weather_py/lib/python3.12/site-packages:/home/yassin_ezzat/ros2_ws/install/turtle_pkg/lib/python3.12/site-packages:/home/yassin_ezzat/ros2_ws/install/pkg_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}, 'shell': False}
+[3.438370] (-) TimerEvent: {}
+[3.540916] (-) TimerEvent: {}
+[3.641724] (-) TimerEvent: {}
+[3.742771] (-) TimerEvent: {}
+[3.844090] (-) TimerEvent: {}
+[3.869932] (turtle_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options\n'}
+[3.870371] (turtle_pkg) StderrLine: {'line': b'!!\n'}
+[3.870628] (turtle_pkg) StderrLine: {'line': b'\n'}
+[3.870971] (turtle_pkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.871218] (turtle_pkg) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[3.871447] (turtle_pkg) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[3.871673] (turtle_pkg) StderrLine: {'line': b'\n'}
+[3.872021] (turtle_pkg) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[3.872342] (turtle_pkg) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[3.872612] (turtle_pkg) StderrLine: {'line': b'\n'}
+[3.873016] (turtle_pkg) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[3.873262] (turtle_pkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.882162] (turtle_pkg) StderrLine: {'line': b'\n'}
+[3.882453] (turtle_pkg) StderrLine: {'line': b'!!\n'}
+[3.882881] (turtle_pkg) StderrLine: {'line': b'  opt = self.warn_dash_deprecation(opt, section)\n'}
+[3.944281] (-) TimerEvent: {}
+[4.045091] (-) TimerEvent: {}
+[4.146391] (-) TimerEvent: {}
+[4.247593] (-) TimerEvent: {}
+[4.350541] (-) TimerEvent: {}
+[4.451064] (-) TimerEvent: {}
+[4.507311] (turtle_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.551248] (-) TimerEvent: {}
+[4.601143] (turtle_pkg) StdoutLine: {'line': b'writing ../../build/turtle_pkg/turtle_pkg.egg-info/PKG-INFO\n'}
+[4.604826] (turtle_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_pkg/turtle_pkg.egg-info/dependency_links.txt\n'}
+[4.605395] (turtle_pkg) StdoutLine: {'line': b'writing entry points to ../../build/turtle_pkg/turtle_pkg.egg-info/entry_points.txt\n'}
+[4.612475] (turtle_pkg) StdoutLine: {'line': b'writing requirements to ../../build/turtle_pkg/turtle_pkg.egg-info/requires.txt\n'}
+[4.612776] (turtle_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_pkg/turtle_pkg.egg-info/top_level.txt\n'}
+[4.651439] (-) TimerEvent: {}
+[4.752237] (-) TimerEvent: {}
+[4.804824] (turtle_pkg) StdoutLine: {'line': b"reading manifest file '../../build/turtle_pkg/turtle_pkg.egg-info/SOURCES.txt'\n"}
+[4.808877] (turtle_pkg) StdoutLine: {'line': b"writing manifest file '../../build/turtle_pkg/turtle_pkg.egg-info/SOURCES.txt'\n"}
+[4.810353] (turtle_pkg) StdoutLine: {'line': b'running build\n'}
+[4.810653] (turtle_pkg) StdoutLine: {'line': b'running build_py\n'}
+[4.810860] (turtle_pkg) StdoutLine: {'line': b'copying turtle_pkg/turtle_chase.py -> /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build/lib/turtle_pkg\n'}
+[4.815582] (turtle_pkg) StdoutLine: {'line': b'running install\n'}
+[4.835263] (turtle_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[4.852890] (-) TimerEvent: {}
+[4.932376] (turtle_pkg) StdoutLine: {'line': b'copying /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/build/lib/turtle_pkg/turtle_chase.py -> /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg\n'}
+[4.935417] (turtle_pkg) StdoutLine: {'line': b'byte-compiling /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg/turtle_chase.py to turtle_chase.cpython-312.pyc\n'}
+[4.947739] (turtle_pkg) StdoutLine: {'line': b'running install_data\n'}
+[4.948125] (turtle_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.953108] (-) TimerEvent: {}
+[5.039913] (turtle_pkg) StdoutLine: {'line': b"removing '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.042981] (turtle_pkg) StdoutLine: {'line': b'Copying ../../build/turtle_pkg/turtle_pkg.egg-info to /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/python3.12/site-packages/turtle_pkg-0.0.0-py3.12.egg-info\n'}
+[5.051307] (turtle_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[5.053285] (-) TimerEvent: {}
+[5.154885] (-) TimerEvent: {}
+[5.255876] (-) TimerEvent: {}
+[5.356363] (-) TimerEvent: {}
+[5.452159] (turtle_pkg) StdoutLine: {'line': b'Installing turtle_chase script to /home/yassin_ezzat/AUR-Training-25/Phase_2/task5/install/turtle_pkg/lib/turtle_pkg\n'}
+[5.454064] (turtle_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/yassin_ezzat/AUR-Training-25/Phase_2/task5/build/turtle_pkg/install.log'\n"}
+[5.456656] (-) TimerEvent: {}
+[5.556469] (turtle_pkg) CommandEnded: {'returncode': 0}
+[5.557407] (-) TimerEvent: {}
+[5.592435] (turtle_pkg) JobEnded: {'identifier': 'turtle_pkg', 'rc': 0}
+[5.597145] (-) EventReactorShutdown: {}

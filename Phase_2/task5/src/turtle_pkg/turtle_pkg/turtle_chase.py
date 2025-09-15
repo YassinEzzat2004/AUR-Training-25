@@ -69,7 +69,7 @@ class Turtle(Node):
 
                 os.system(f"ros2 service call /enemy{i+1}/teleport_absolute turtlesim/srv/TeleportAbsolute '{{x: {x}, y: {y}, theta: 0.0}}'")
             elif (self.flags[i]) and abs(self.pos_main.x-pos.x)<=0.5 and abs(self.pos_main.y-pos.y)<=0.5:
-                self.flags[i]=True
+                self.flags[i]=False
                 
     def key_loop(self):
         key = self.stdscr.getch()
