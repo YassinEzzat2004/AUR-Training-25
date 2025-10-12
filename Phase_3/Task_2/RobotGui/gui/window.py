@@ -1,5 +1,5 @@
 from PySide6.QtGui import QKeyEvent
-from PySide6.QtWidgets import QWidget, QMainWindow, QVBoxLayout
+from PySide6.QtWidgets import QWidget, QMainWindow, QVBoxLayout,QSizePolicy
 from RobotGui.gui.camera_display import CameraDisplay
 from RobotGui.gui.coordinates_display import CoordinatesDisplay
 from PySide6.QtCore import Qt
@@ -36,8 +36,9 @@ class CentralWidget(QWidget):
 
         self._layout = QVBoxLayout(self)
         self._camera_widget = CameraDisplay()
-        self._layout.addWidget(self._camera_widget)
+        self._layout.addWidget(self._camera_widget,2)
 
         self._coordinates_widget = CoordinatesDisplay()
+        self._coordinates_widget.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Expanding)
         setup(self._coordinates_widget.update_coordinates)
-        self._layout.addWidget(self._coordinates_widget)
+        self._layout.addWidget(self._coordinates_widget,1)

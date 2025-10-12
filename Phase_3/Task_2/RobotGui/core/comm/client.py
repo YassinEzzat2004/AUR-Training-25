@@ -6,13 +6,19 @@ import paho.mqtt.publish as publish
 import RobotGui.core.comm.sub.coords as coords
 
 _mqttc = MC(CallbackAPIVersion.VERSION2)
-
+flag=False
 
 def _on_connect(client, userdata, flags, reason_code, properties):
+    global flag
     if reason_code.is_failure:
         print('Failed to connect. Retrying..')
     else:
-        subscribe.callback(coords.callback, 'robot/coordinates')
+        flag=True
+        print('connected to broker')
+        #subscribe.callback(coords.callback, 'robot/coordinates')
+        _mqttc.subscribe('robot/coordinates')
+        _mqttc.on_message=coords.callback
+        
         
 
 def setup(coords_slot, address = 'localhost', port = 1883):
@@ -22,5 +28,8 @@ def setup(coords_slot, address = 'localhost', port = 1883):
     _mqttc.loop_start()
 
 def move_command(message:str):
-    _mqttc.publish('robot/movements',message)
+    if  flag:
+        _mqttc.publish('robot/move',message)
+    else:
+        print('not yet')
     
